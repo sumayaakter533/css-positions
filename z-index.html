@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Z-index properties</title>
+        <style>
+            div > img {
+                width: 200px;
+                height: 100px;
+            }
+
+            .box {
+                position: relative;
+            }
+
+            .img-div2 {
+                top: 45px;
+                z-index: 1;
+            }
+
+            .img-div1 {
+                top: 70px;
+                z-index: 11;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Z-index</h1>
+        <section style="margin: 50px">
+            <div class="img-div1 box">
+                <img src="./images/img3.jpg" alt="" />
+            </div>
+            <div class="img-div2 box">
+                <img src="./images/img2.png" alt="" />
+            </div>
+            <div class="img-div3 box">
+                <img src="./images/img1.jpg" alt="" />
+            </div>
+        </section>
+    </body>
+</html>
